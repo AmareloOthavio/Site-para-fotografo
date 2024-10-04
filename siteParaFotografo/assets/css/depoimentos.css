@@ -6,9 +6,11 @@
     color: white;
 }
 
+/* Configurações de cabeçalho */
 header {
     height: 10vh;
     background-color: #484848;
+    color: white;
 
     display: flex;
     flex-direction: row;
@@ -31,3 +33,4 @@ header img {
     align-self: center;
     margin-right: 9vw;
 }
+/* Fim das configurações de cabeçalho */
