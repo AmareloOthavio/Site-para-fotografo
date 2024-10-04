@@ -57,5 +57,74 @@ header img {
     max-height: 10vh;
     align-self: center;
     margin-right: 9vw;
+
 }
 /* Fim das configurações de cabeçalho */
+
+section {
+    background-color:  #5c5b5b;
+}
+
+h1 {
+    margin: 40px;
+    font-size: 55;
+    color: rgb(196 186 134);
+    text-align: center;
+
+}
+
+.dep1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgb(0, 0, 0);
+    padding: 39px;
+    margin: 30px;
+}
+
+
+.dep1 img{
+width: 261px
+}
+
+.dep2 img{
+width: 350px;    
+}
+
+.dep3 img{
+width: 450px;   
+}
+
+.dep4 img{
+width: 350px;    
+}
+
+h2 {
+    color: rgb(196 186 134)
+}
+p {
+    color: aliceblue;
+}
+
+footer {
+    height: 10vh;
+    background-color: #484848;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img {
+    max-height: 9vh;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
