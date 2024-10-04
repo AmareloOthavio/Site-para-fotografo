@@ -1,3 +1,27 @@
+/* Rodapé */
+footer {
+    height: 10vh;
+    background-color: #484848;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img {
+    max-height: 9vh;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 /* Configurações de cabeçalho */
 * {
     padding: 0;
@@ -8,7 +32,8 @@ header {
     height: 10vh;
     background-color: #484848;
     color: white;
-
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -26,7 +51,7 @@ header a {
     height: 4.5vh;
 }
 header img {
-    max-height: 19vh;
+    max-height: 10vh;
     align-self: center;
     margin-right: 9vw;
 }
