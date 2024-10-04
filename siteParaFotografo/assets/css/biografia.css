@@ -4,7 +4,6 @@
     text-decoration: none;
 }
 
-/* Rodapé */
 footer {
     height: 10vh;
     background-color: #484848;
@@ -42,7 +41,8 @@ header {
     height: 10vh;
     background-color: #484848;
     color: white;
-
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -114,6 +114,10 @@ header img {
     text-align: justify;
     justify-content: center;
     align-items: center;
+}
+
+.itens {
+    padding-top: 60px;
 }
 
 .itens div p {
