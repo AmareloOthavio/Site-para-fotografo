@@ -22,8 +22,6 @@
             
         </section> 
 
-    
-
     <section class="page1">
         <div class="box1">
             <h1 class="titulo">CONHEÇA O MEU TRABALHO:</h1>
@@ -42,12 +40,12 @@
     <section class="page2">
         <h1 class="titulo espacamento titulobranco">ALGUM DOS MEUS TRABALHOS</h1>
         <div class="galeria">
-            <img class="imgs" src="assets/img/img1.jpg" alt="">
-            <img class="imgs" src="assets/img/img2.jpg" alt="">
-            <img class="imgs" src="assets/img/img3.jpg" alt="">
-            <img class="imgs" src="assets/img/img4.jpg" alt="">
-            <img class="imgs" src="assets/img/img5.png" alt="">
-            <img class="imgs" src="assets/img/img6.jpg" alt="">
+            <img class="imgs" src="assets/img/img1.jpg" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img2.jpg" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img3.jpg" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img4.jpg" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img5.png" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img6.jpg" alt="" onclick="aumentarImagem(event)">            
         </div>
     </section>
 
@@ -57,19 +55,19 @@
             <h1 class="">Contate-me</h1>
             <form action="">
                 <div class="forms">
-                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
                 </div>
                 <div class="forms">
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="forms">
-                    <input type="tel" id="numero" name="numero" placeholder="Número Telefone">
+                    <input type="tel" id="numero" name="numero" placeholder="Número Telefone" required>
                 </div>
                 <div class="forms">
-                    <input type="text" id="texto" name="texto" placeholder="Escreva uma mensagem">
+                    <input type="text" id="texto" name="texto" placeholder="Escreva uma mensagem" required>
                 </div>                
 
-                <input class="button" type="submit" value="Envie">
+                <button class="button" id="botao" type="submit">Envie</button>
                 <input class="button" type="reset" value="Apague">
               </form>
         </div>
@@ -81,6 +79,43 @@
         <p>© 2024 | FELIPE OLIVEIRA | TODOS OS DIREITOS RESERVADOS</p>
         <img src="assets/img/logo.png">
     </footer>
+
+    <div id="div-overlay">
+        <img src="">
+        <p id="x">X</p>
+    </div>
+
+    <script>
+        const divOverlay = document.getElementById('div-overlay');
+        const x = document.getElementById('x');
+        const img = divOverlay.querySelector('img');
+    
+        function aumentarImagem(event) {
+            img.src = event.target.src; // Pega o src da imagem clicada
+            divOverlay.style.display = 'flex'; // Exibe o overlay
+        }
+    
+        // Para fechar o overlay
+        x.addEventListener('click', function() {
+            divOverlay.style.display = 'none';
+        });
+
+        function mensagem() {
+            var botao = document.querySelector("#botao")
+            botao.textContent = "Enviado!"
+
+            setTimeout(trocar, 2000)
+        }
+
+        function trocar() {
+            var botao = document.querySelector("#botao")
+            botao.textContent = "Envie"
+        }
+
+        var botao = document.querySelector("#botao")
+        botao.addEventListener('click', mensagem)
+
+    </script>
 
 </body>
 </html>

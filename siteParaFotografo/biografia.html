@@ -28,7 +28,7 @@
             </div>
 
             <div>
-                <img src="assets/img/introducao1.png" alt="Fotógrafo profissional fotografando">
+                <img src="assets/img/introducao1.png" alt="Fotógrafo profissional fotografando" class="img1">
             </div>
         </div>
 
@@ -42,7 +42,7 @@
             </div>
 
             <div>
-                <img src="assets/img/iniciodavida2.png" alt="Câmera fotográfica e fotos">
+                <img src="assets/img/iniciodavida2.png" alt="Câmera fotográfica e fotos" class="img2">
             </div>   
         </div>
 
@@ -56,7 +56,7 @@
             </div>
 
             <div>
-                <img src="assets/img/formacaoecarreira3.png" alt="Logo da Universidade Anhembi Morumbi, onde ele se formou">
+                <img src="assets/img/formacaoecarreira3.png" alt="Logo da Universidade Anhembi Morumbi, onde ele se formou" class="img3">
             </div>
         </div>
 
@@ -70,7 +70,7 @@
             </div>
 
             <div>
-                <img src="assets/img/estilofotografico4.png" alt="Fotógrafo profissional fotografando">
+                <img src="assets/img/estilofotografico4.png" alt="Fotógrafo profissional fotografando" class="img4">
             </div>
         </div>
 
@@ -84,7 +84,7 @@
             </div>
 
             <div>
-                <img src="assets/img/reconhecimentoepremios5.png" alt="Fearless Photographers - Competição renomada">
+                <img src="assets/img/reconhecimentoepremios5.png" alt="Fearless Photographers - Competição renomada" class="img5">
             </div> 
         </div>
     </section>
@@ -94,5 +94,47 @@
         <p>© 2024 | FELIPE OLIVEIRA | TODOS OS DIREITOS RESERVADOS</p>
         <img src="assets/img/logo.png">
     </footer>
+
+    <script>
+        function clicou1() {
+            let imagens = document.querySelector('.img1')
+            imagens.remove()
+        }
+
+        var imagens = document.querySelector('.img1')
+        imagens.addEventListener('click', clicou1)
+
+        function clicou2() {
+            let imagens = document.querySelector('.img2')
+            imagens.remove()
+        }
+
+        var imagens2 = document.querySelector('.img2')
+        imagens2.addEventListener('click', clicou2)
+
+        function clicou3() {
+            let imagens = document.querySelector('.img3')
+            imagens.remove()
+        }
+
+        var imagens3 = document.querySelector('.img3')
+        imagens3.addEventListener('click', clicou3)
+
+        function clicou4() {
+            let imagens = document.querySelector('.img4')
+            imagens.remove()
+        }
+
+        var imagens4 = document.querySelector('.img4')
+        imagens4.addEventListener('click', clicou4)
+
+        function clicou5() {
+            let imagens = document.querySelector('.img5')
+            imagens.remove()
+        }
+
+        var imagens5 = document.querySelector('.img5')
+        imagens5.addEventListener('click', clicou5)
+    </script>
 </body>
 </html>
