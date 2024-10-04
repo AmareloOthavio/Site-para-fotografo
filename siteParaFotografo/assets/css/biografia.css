@@ -4,24 +4,6 @@
     text-decoration: none;
 }
 
-footer {
-    height: 10vh;
-    background-color: #484848;
-    color: white;
-    padding-bottom: 29px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-footer img {
-    max-height: 19vh;
-    align-self: center;
-    margin-right: 9vw;
-}
-
 img {
     max-width: 100%;
 }
@@ -126,4 +108,27 @@ header img {
 
 .itens img {
     max-width: 150px;
+}
+
+footer {
+    height: 10vh;
+    background-color: #484848;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img {
+    max-height: 17vh;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
 }
