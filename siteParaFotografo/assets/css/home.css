@@ -1,3 +1,22 @@
+/* Rodapé */
+footer {
+    height: 10vh;
+    background-color: #484848;
+    color: white;
+    padding-bottom: 29px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+footer img {
+    max-height: 19vh;
+    align-self: center;
+    margin-right: 9vw;
+}
+
 /* Configurações de cabeçalho */
 header {
     height: 10vh;
