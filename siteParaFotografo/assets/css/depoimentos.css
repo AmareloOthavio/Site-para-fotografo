@@ -3,26 +3,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    background-color:  rgb(196 186 134);
-}
-
-/* Rodapé */
-footer {
-    height: 10vh;
-    background-color: #484848;
-    color: white;
-    padding-bottom: 29px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-footer img {
-    max-height: 19vh;
-    align-self: center;
-    margin-right: 9vw;
+    
 }
 
 /* Configurações de cabeçalho */
@@ -48,8 +29,76 @@ header a {
     height: 4.5vh;
 }
 header img {
-    max-height: 19vh;
+    max-height: 10vh;
     align-self: center;
     margin-right: 9vw;
+
 }
 /* Fim das configurações de cabeçalho */
+
+section {
+    background-color:  #5c5b5b;
+}
+
+h1 {
+    font-size: 55;
+    color: rgb(196 186 134);
+    text-align: center;
+
+}
+
+.dep1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgb(0, 0, 0);
+    padding: 39px;
+    margin: 30px;
+}
+
+
+.dep1 img{
+width: 261px
+}
+
+.dep2 img{
+width: 350px;    
+}
+
+.dep3 img{
+width: 450px;   
+}
+
+.dep4 img{
+width: 350px;    
+}
+
+h2 {
+    color: rgb(196 186 134)
+}
+p {
+    color: aliceblue;
+}
+
+footer {
+    height: 10vh;
+    background-color: #484848;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img {
+    max-height: 9vh;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
