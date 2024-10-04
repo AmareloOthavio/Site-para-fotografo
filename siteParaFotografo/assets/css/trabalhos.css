@@ -67,6 +67,7 @@ section:nth-child(2) img {
     max-width: 100%;
     max-height: 70vh;
     height: auto;
+    border-radius: 10px;
 }
 section:nth-child(2) p {
     text-align: center;
@@ -76,6 +77,7 @@ section:nth-child(2) p {
 
 /* Rodapé */
 footer {
+    margin-top: 10px;
     height: 10vh;
     background-color: #484848;
     color: white;
@@ -96,4 +98,30 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
     text-align: center;
+}
+
+/* Responsividade */
+
+@media(max-width:750px) {
+    header a {
+        font-size: 11px;
+        padding: 2.5px;
+        padding-top: 5px;
+        width: 18vw;
+    }
+    header a:nth-child(5) {
+        margin-right: 10px;
+    }
+    footer p {
+        font-size: 9px;
+    }
+    footer img {
+        max-height: 7vh;
+    }
+    header img {
+        max-height: 5vh;
+    }
+    header {
+        gap:5px
+    }
 }
