@@ -3,7 +3,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: white;
+    background-color:  rgb(196 186 134);
 }
 
 /* Configurações de cabeçalho */
@@ -34,3 +34,4 @@ header img {
     margin-right: 9vw;
 }
 /* Fim das configurações de cabeçalho */
+
