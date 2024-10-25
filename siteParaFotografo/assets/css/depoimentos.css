@@ -22,6 +22,7 @@ footer {
 footer img {
     max-height: 9vh;
     margin: 0 10px;
+    background-color: #484848;
 }
 
 footer p {
@@ -57,7 +58,7 @@ header img {
     max-height: 10vh;
     align-self: center;
     margin-right: 9vw;
-
+    background-color: #484848;
 }
 /* Fim das configurações de cabeçalho */
 
