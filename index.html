@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png">
+        <a href="index.html">Home</a>
+        <a href="trabalhos.html">Trabalhos</a>
+        <a href="biografia.html">Biografia</a>
+        <a href="depoimentos.html">Depoimentos</a>
+    </header>
+
+        <section class="imagemfundo">
+            <div class="opacidade"></div>
+
+            <p class="text1">O MELHOR FOTÓGRAFO <br> QUE VOCÊ VERÁ!</p>
+            
+        </section> 
+
+    <section class="page1">
+        <div class="box1">
+            <h1 class="titulo">CONHEÇA O MEU TRABALHO:</h1>
+        </div>
+        <div class="box2">
+            <p class="textpage1">Sou o Felipe Oliveira, e para mim, fotografar é como capturar
+            a essência da alegria em movimento. Cada sorriso, cada gesto
+            espontâneo é como um raio de sol que eu tenho o privilégio
+            de congelar no tempo. Minha paixão é transformar esses
+            momentos únicos em imagens que contam histórias autênticas.
+            Com foco em festas de 15 e casamentos, busco sempre a luz e os detalhes que fazem
+            de cada fotografia uma celebração da vida e da felicidade.</p>
+        </div>
+    </section>
+
+    <section class="page2">
+        <h1 class="titulo espacamento titulobranco">ALGUM DOS MEUS TRABALHOS</h1>
+        <div class="galeria">
+            <img class="imgs" src="assets/img/img1.jpg" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img2.jpg" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img3.jpg" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img4.jpg" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img5.png" alt="" onclick="aumentarImagem(event)">
+            <img class="imgs" src="assets/img/img6.jpg" alt="" onclick="aumentarImagem(event)">            
+        </div>
+    </section>
+
+    <section>
+
+        <div class="contate-me">
+            <h1 class="">Entre em contato</h1>
+            <form action="">
+                <div class="forms">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+                <div class="forms">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="forms">
+                    <input type="tel" id="numero" name="numero" placeholder="Número Telefone" required>
+                </div>
+                <div class="forms">
+                    <input type="text" id="texto" name="texto" placeholder="Escreva uma mensagem" required>
+                </div>                
+
+                <button class="button" id="botao" type="submit">Envie</button>
+                <input class="button" type="reset" value="Apague">
+              </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <img src="assets/img/logo.png">
+        <p>© 2024 | FELIPE OLIVEIRA | TODOS OS DIREITOS RESERVADOS</p>
+        <img src="assets/img/logo.png">
+    </footer>
+
+    <div id="div-overlay">
+        <img src="">
+        <p id="x">X</p>
+    </div>
+
+    <script>
+        const divOverlay = document.getElementById('div-overlay');
+        const x = document.getElementById('x');
+        const img = divOverlay.querySelector('img');
+    
+        function aumentarImagem(event) {
+            img.src = event.target.src; // Pega o src da imagem clicada
+            divOverlay.style.display = 'flex'; // Exibe o overlay
+        }
+    
+        // Para fechar o overlay
+        x.addEventListener('click', function() {
+            divOverlay.style.display = 'none';
+        });
+
+        function mensagem() {
+            var botao = document.querySelector("#botao")
+            botao.textContent = "Enviado!"
+
+            setTimeout(trocar, 2000)
+        }
+
+        function trocar() {
+            var botao = document.querySelector("#botao")
+            botao.textContent = "Envie"
+        }
+
+        var botao = document.querySelector("#botao")
+        botao.addEventListener('click', mensagem)
+
+    </script>
+
+</body>
+</html>

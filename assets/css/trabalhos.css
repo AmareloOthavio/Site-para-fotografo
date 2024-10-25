@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+body {
+    background-color: #2b2a2a;
+}
+
+/* Configurações de cabeçalho */
+header {
+    height: 10vh;
+    background-color: #484848;
+    color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+header a {
+    color: white;
+    background-color: rgb(196 186 134);
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    width: 13vw;
+    height: 4.5vh;
+}
+header img {
+    max-height: 10vh;
+    align-self: center;
+    margin-right: 9vw;
+}
+/* Fim das configurações de cabeçalho */
+
+/* Primeira seção */
+section:nth-child(1) {
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url(../img/trabalhoIlustrativo1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section:nth-child(1) h1 {
+    color: black;
+    text-shadow: rgb(196 186 134) -2px 2px 3px;
+}
+/* Fim da primeira seção */
+
+/* Início da segunda seção */
+section:nth-child(2) {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+section:nth-child(2) img {
+    max-width: 100%;
+    max-height: 70vh;
+    height: auto;
+    border-radius: 10px;
+}
+section:nth-child(2) p {
+    text-align: center;
+    padding: 20px 20px;
+    z-index: 2;
+}
+#camera {
+    height: 50px;
+    width: 50px;
+    position:absolute;
+    bottom: 100px;
+    transform: rotate(-33deg);
+    z-index: 1;
+}
+/* Fim da segunda seção */
+
+/* Rodapé */
+footer {
+    margin-top: 10px;
+    height: 10vh;
+    background-color: #484848;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img {
+    max-height: 9vh;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsividade */
+@media(max-width:750px) {
+    header a {
+        font-size: 11px;
+        padding: 2.5px;
+        padding-top: 5px;
+        width: 18vw;
+    }
+    header a:nth-child(5) {
+        margin-right: 10px;
+    }
+    footer p {
+        font-size: 9px;
+    }
+    footer img {
+        max-height: 7vh;
+    }
+    header img {
+        max-height: 5vh;
+    }
+    header {
+        gap:5px
+    }
+}

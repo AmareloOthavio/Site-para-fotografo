@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/trabalhos.css">
+    <title>Trabalhos</title>
+</head>
+<body>
+
+
+    <header>
+        <img src="assets/img/logo.png">
+        <a href="index.html">Home</a>
+        <a href="trabalhos.html">Trabalhos</a>
+        <a href="biografia.html">Biografia</a>
+        <a href="depoimentos.html">Depoimentos</a>
+    </header>
+    <main>
+        <section>
+            <h1>Exemplos de meus trabalhos</h1>
+        </section>
+        <section>
+
+            <img id="camera" src="assets/img/cameraNormal-removebg-preview.png">
+
+            <p>Bem-vindo ao meu mundo, onde cada clique da câmera transforma um instante fugaz em uma lembrança eterna. Acredito que as festas, os casamentos e as comemorações de 15 anos são muito mais do que eventos; são histórias de amor, alegria e união que merecem ser contadas com toda a beleza que carregam.<br> <br>
+
+                Meu trabalho é capturar a essência de cada momento, desde os sorrisos emocionados até as danças cheias de alegria. Cada imagem é um reflexo do sentimento vivido, uma janela para recordar os laços que nos unem. Estou aqui para garantir que, quando você olhar para suas fotos, sinta novamente a magia do dia, como se estivesse revivendo cada emoção. <br> <br>
+                
+                Vamos juntos celebrar a sua história! Cada festa é única, e eu estou pronto para eternizar a sua da forma mais especial possível. Venha me contar sobre seus sonhos e vamos transformá-los em imagens que durarão para sempre.
+            </p>
+            <img src="assets/img/trabalhoIlustrativo7.png">
+            <img src="assets/img/trabalhoIlustrativo2.png">
+            <img src="assets/img/trabalhoIlustrativo3.png">
+            <img src="assets/img/trabalhoIlustrativo4.jpg">
+            <img src="assets/img/trabalhoIlustrativo5.jpg">
+            <img src="assets/img/trabalhoIlustrativo6.png">
+            <img src="assets/img/trabalhoIlustrativo7.png">
+            <img src="assets/img/trabalhoIlustrativo8.png">
+            <img src="assets/img/trabalhoIlustrativo9.jpg">
+            <img src="assets/img/trabalhoIlustrativo10.png">
+        </section>
+    </main>
+    <footer>
+        <img src="assets/img/logo.png">
+        <p>© 2024 | FELIPE OLIVEIRA | TODOS OS DIREITOS RESERVADOS</p>
+        <img src="assets/img/logo.png">
+    </footer>
+    <script>
+        var camera = document.querySelector('#camera');
+        camera.addEventListener("click", function() {
+            if (camera.src.endsWith("cameraNormal-removebg-preview.png")) {
+                camera.src = "assets/img/cameraFoto-removebg-preview.png";
+            } else {
+                camera.src = "assets/img/cameraNormal-removebg-preview.png";
+            }
+        });
+    </script>
+    
+</body>
+</html>
