@@ -91,11 +91,11 @@
         const img = divOverlay.querySelector('img');
     
         function aumentarImagem(event) {
-            img.src = event.target.src; // Pega o src da imagem clicada
-            divOverlay.style.display = 'flex'; // Exibe o overlay
+            img.src = event.target.src;
+            divOverlay.style.display = 'flex';
         }
     
-        // Para fechar o overlay
+        
         x.addEventListener('click', function() {
             divOverlay.style.display = 'none';
         });
